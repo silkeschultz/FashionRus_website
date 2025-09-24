@@ -3,64 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>FashionRus</title>
   </head>
   <body>
     <header>
-      <a href="index.html">
-        <img src="img/logo.png" alt="logo" />
-      </a>
       <nav>
-        <a href="index.html">Categories</a>
-        <a href="productlist.html">Brands</a>
-        <a href="productlist.html">Seasons</a>
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <a class="nav-link" href="index.html">Categories</a>
+        <a class="nav-link" href="productlist.html">Brands</a>
+        <a class="nav-link" href="productlist.html">Seasons</a>
       </nav>
     </header>
     <main>
+      <h1>Vores produkter</h1>
       <div class="product_list_container">
-        <h1>Vores produkter</h1>
-        <a href="product.html">
-          <div class="produkt1">
+        <div class="produkt">
+          <a href="product.html">
             <img src="img/1533.webp" alt="rød trøje 1" />
             <h3>Puma</h3>
             <h4>T-shirt print - high risk red</h4>
             <p>499,00 kr</p>
-          </div>
-        </a>
-        <a href="product.html">
-          <div class="produkt2">
+          </a>
+        </div>
+        <div class="produkt">
+          <a href="product.html">
             <img src="img/1537.webp" alt="rød trøje 2" />
             <h3>Puma</h3>
             <h4>Sports t-shirt slim fit - red</h4>
             <p>399,00 kr</p>
-          </div>
-        </a>
-        <a href="product.html">
-          <div class="produkt3">
+          </a>
+        </div>
+        <div id="udsolgt" id="nedsat" class="produkt">
+          <a href="product.html">
             <img src="img/1545.webp" alt="sko 1" />
             <h3>Puma</h3>
             <h4>Speedcat OG - black and white</h4>
             <p>719,00 kr</p>
             <p>Normalpris: 899,00 kr - 20%</p>
-          </div>
-        </a>
-        <a href="product.html">
-          <div class="produkt4">
+          </a>
+        </div>
+        <div class="produkt">
+          <a href="product.html">
             <img src="img/1546.webp" alt="sko 2" />
             <h3>Unknown</h3>
             <h4>Sport sneakers - black and white</h4>
             <p>699,00 kr</p>
-          </div>
-        </a>
-        <a href="product.html">
-          <div class="produkt5">
+          </a>
+        </div>
+        <div id="nedsat" class="produkt">
+          <a href="product.html">
             <img src="img/1548.webp" alt="sko 3" />
             <h3>Unknown</h3>
             <h4>Running trainers - Grey, white and yellow</h4>
             <p>1.199,00 kr</p>
             <p>Normlpris: 1499,00 kr - 20%</p>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </main>
     <footer></footer>

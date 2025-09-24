@@ -1,2 +1,53 @@
-body {
+main {
+  margin: 5rem;
+}
+/* Navigationsbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  height: 80px;
+}
+.nav-link {
+  text-decoration: none;
+  color: rgb(171, 34, 3);
+  margin-left: 1px;
+  font-weight: 500;
+}
+.nav-link:hover {
+  border: 2px solid grey;
+  border-radius: 2rem;
+  padding: 5px 10px;
+}
+/* Kategorier på forsiden */
+.category_list_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  padding: 50px 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* Produktliste */
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }

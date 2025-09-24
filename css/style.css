@@ -1,0 +1,77 @@
+/* Generelt css */
+@font-face {
+  font-family: "Anton";
+  src: url(../fonts/Anton-Regular.ttf);
+}
+@font-face {
+  font-family: "Archivo";
+  src: url(../fonts/Archivo_Expanded-Regular.ttf);
+}
+body {
+  background-color: beige;
+}
+h1,
+h2,
+a {
+  font-family: "Anton";
+}
+
+h3,
+h4,
+p {
+  font-family: "Archivo";
+}
+/* Forside */
+/* Navnigationsbar */
+header {
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Kategorier */
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgb(171, 34, 3);
+  color: beige;
+  border-radius: 0.2rem;
+  border: 5em;
+  padding: 1rem;
+}
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover {
+  background-color: beige;
+  color: rgb(171, 34, 3);
+  border: 2px solid grey;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+/* Produktliste */
+h3 {
+  font-weight: bolder;
+}
+/* Styling for produktkontainer */
+.product_list_container > div[class^="produkt"] {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+/* Styling for billeder */
+.product_list_container img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
