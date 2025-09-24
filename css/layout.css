@@ -12,12 +12,12 @@ nav img {
 }
 .nav-link {
   text-decoration: none;
-  color: rgb(171, 34, 3);
+  color: rgb(74, 37, 9);
   margin-left: 1px;
   font-weight: 500;
 }
 .nav-link:hover {
-  border: 2px solid grey;
+  border: 2px solid rgb(171, 34, 3);
   border-radius: 2rem;
   padding: 5px 10px;
 }
