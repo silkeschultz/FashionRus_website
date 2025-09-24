@@ -51,3 +51,8 @@ nav img {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Footer */
+footer {
+  text-align: center;
+}
