@@ -130,7 +130,7 @@ a {
 }
 
 /* Produkinfo */
-.product-container {
+.productContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 300px;
   gap: 20px;
@@ -225,4 +225,8 @@ a {
 
 .add-to-basket:hover {
   background-color: #e0e0e0;
+}
+.price {
+  font-weight: bolder;
+  color: beige;
 }
