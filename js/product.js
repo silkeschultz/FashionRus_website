@@ -4,7 +4,8 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
-.then((res)=>res.json()).then(showProduct)
+.then((res)=>res.json())
+.then(data =>showProduct(data))
   
   function showProduct(product) {  
   productContainer.innerHTML = `
