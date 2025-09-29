@@ -88,7 +88,7 @@ a {
 
 /* Labels */
 /* Udsolgt */
-#udsolgt::before {
+.udsolgt::before {
   content: "Sold Out";
   position: absolute;
   top: 20px;
@@ -101,7 +101,7 @@ a {
   font-family: "Archivo";
   z-index: 1;
 }
-#udsolgt img {
+.udsolgt img {
   filter: grayscale(100%);
 }
 
@@ -110,13 +110,13 @@ a {
   color: red;
   font-weight: bold;
 }
-#nedsat a {
+.nedsat a {
   position: relative;
   display: block;
 }
 
-#nedsat a::after {
-  content: "-20%";
+.nedsat a::after {
+  content: "%";
   position: absolute;
   top: 20px;
   right: 1px;
