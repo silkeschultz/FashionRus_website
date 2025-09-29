@@ -4,9 +4,9 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
-.then((res)=>res.json()).then((product)=>{
-  /* console.log(product.articletype); */
+.then((res)=>res.json()).then(showProduct)
   
+  function showProduct(product) {  
   productContainer.innerHTML = `
   <div class="product-image">
   <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="rød puma trøje" />
@@ -37,4 +37,4 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
   <button class="add-to-basket">Add to basket</button>
   </div>
   `;
-  })
+  }
