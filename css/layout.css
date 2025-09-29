@@ -22,7 +22,7 @@ nav img {
   padding: 5px 10px;
 }
 /* Kategorier på forsiden */
-.category_list_container {
+.categorylist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
