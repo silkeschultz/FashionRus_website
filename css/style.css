@@ -7,9 +7,7 @@
   font-family: "Archivo";
   src: url(../fonts/Archivo_Expanded-Regular.ttf);
 }
-body {
-  background-color: beige;
-}
+
 h1,
 h2,
 a {
@@ -45,7 +43,7 @@ header {
   text-decoration: none;
   display: inline-block;
   background-color: rgb(171, 34, 3);
-  color: beige;
+  color: white;
   border-radius: 0.2rem;
   border: 5em;
   padding: 1rem;
@@ -56,7 +54,7 @@ header {
 .four:hover,
 .five:hover,
 .six:hover {
-  background-color: beige;
+  background-color: white;
   color: rgb(171, 34, 3);
   border: 2px solid rgb(74, 37, 9);
   border-radius: 0.2rem;
@@ -137,7 +135,6 @@ a {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  background-color: beige;
 }
 .product-image {
   grid-column: 1;
