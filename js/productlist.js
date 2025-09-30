@@ -4,9 +4,28 @@ const category = params.get("category");
 const productListContainer = document.querySelector(".product_list_container");
 const header = document.querySelector("h1").textContent = category
 
+document.querySelectorAll("#filters button").forEach(knap=>knap.addEventListener("click", showFiltered));
+
+function showFiltered(){
+  console.log("showFiltered");
+  productListContainer.innerHTML = ""
+  const gender = this.dataset.gender;
+  if (gender=="All"){
+    showProducts(allData);
+  } else {
+    const udsnit = allData.filter(product=>product.gender == gender);
+    showProducts(udsnit);
+  }
+}
+
+let allData
+
 fetch(`https://kea-alt-del.dk/t7/api/products?limit=30&category=${category}`)
 .then((res)=>res.json())
-.then(data =>showProducts(data))
+.then(data => {
+    allData = data;
+    showProducts(allData);
+  });
 
 function showProducts(products) {  
       console.log(products);
