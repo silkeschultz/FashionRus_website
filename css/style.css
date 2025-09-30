@@ -7,7 +7,6 @@
   font-family: "Archivo";
   src: url(../fonts/Archivo_Expanded-Regular.ttf);
 }
-
 h1,
 h2,
 a {
@@ -226,4 +225,23 @@ a {
 .price {
   font-weight: bolder;
   color: beige;
+}
+
+/* Filter knapper */
+button {
+  background-color: white;
+  color: rgb(74, 37, 9);
+  border: 2px solid rgb(171, 34, 3);
+  border-radius: 2rem;
+  padding: 5px 10px;
+  font-weight: bolder;
+  margin: 0.2rem;
+}
+button:hover {
+  background-color: rgb(171, 34, 3);
+  color: white;
+  font-weight: bolder;
+}
+section {
+  margin: 3rem;
 }
