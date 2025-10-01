@@ -103,6 +103,9 @@ a {
 }
 
 /* Nedsat */
+.normal_price {
+  color: black;
+}
 .nedsat_pris {
   color: red;
   font-weight: bold;
@@ -115,7 +118,7 @@ a {
 .nedsat a::after {
   content: "%";
   position: absolute;
-  top: 20px;
+  bottom: 25px;
   right: 1px;
   background-color: rgba(244, 5, 5, 0.8);
   color: white;
