@@ -4,12 +4,24 @@ const category = params.get("category");
 const productListContainer = document.querySelector(".product_list_container");
 const header = document.querySelector("h1").textContent = category
 
-document.querySelectorAll("#filters button").forEach(knap=>knap.addEventListener("click", showFiltered));
+document.querySelector("#filters").addEventListener("click", showFiltered);
+document.querySelector("#sorting").addEventListener("click", showSorted);
 
-function showFiltered(){
+function showSorted(event){
+  const direction = event.target.dataset.direction;
+  if(direction=="lohi"){
+    allData.sort((firstItem,secondItem)=>firstItem.price - secondItem.price);
+  }else{
+    allData.sort((firstItem,secondItem)=>secondItem.price - firstItem.price);
+  }
+  showProducts(allData);
+}
+
+function showFiltered(event){
+  console.log(event.target)
   console.log("showFiltered");
   productListContainer.innerHTML = ""
-  const gender = this.dataset.gender;
+  const gender = event.target.dataset.gender;
   if (gender=="All"){
     showProducts(allData);
   } else {
